@@ -1,0 +1,169 @@
+/* ---------
+【直したい箇所】
+・拡大したときにロゴや写真のサイズが汚くなる
+・ヘッダーのロゴだけ場所移動させたい
+・プロフィールの背景画像を小さくして中央ぞろえにしたい
+・フッターのボーダーを短くしたい
+---------- */
+
+body {
+    background: white;
+}
+
+/* -- ヘッダー -- */
+.header {
+    background: white;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.header a {
+    margin: 10px 0px 0px 230px;
+}
+
+/* -- 写真 -- */
+img {
+    max-width: 100%;
+}
+
+.content1 {
+    display: flex;
+    padding: 10px;
+    margin: 100px 0px 0px 0px;
+}
+.main1 {
+    flex: 1;
+    padding: 0px 25px 0px 230px;
+}
+.main2 {
+    flex: 1;
+    padding: 100px 230px 0px 25px;
+}
+
+/* ---------
+コンテンツ
+---------- */
+.container {
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+/* -- ページ概要 -- */
+.content2 {
+    display: flex;
+    padding: 50px 0px;
+}
+h1 {
+    flex: 1;
+    writing-mode: vertical-rl;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 240%;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-align: start;
+}
+.p1 {
+    flex: 5;
+    text-align: left;
+    padding-left: 100px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 50px 0px;
+}
+
+/* -- プロフィール -- */
+.content3 {
+    display: flex;
+    width: 100%; /* -- 背景だけ真ん中にしたいのに左寄せになる --*/
+    background-image: url(images/check2.PNG);
+    background-position: center;
+}
+.profile1 {
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+}
+h2 {
+    background: rgb(242, 243, 198); /* -- 色変える？ --*/
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 40px 150px 0px 0px ;
+    padding: 5px;
+    max-width: 30%;
+    border-left: 10px rgb(72, 73, 75) solid;
+}
+.content4 {
+    display: flex;
+}
+ul {
+    flex: 2;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin: 20px 0px 0px 20px ;
+    line-height: 40px;
+    font-size: small;
+    list-style:none;
+}
+.dan {
+    float:left;
+}
+.dan2 {
+    display: block;
+    margin-left: 130px;
+}
+.p4 {
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 30px 100px 10px 100px;
+    padding: 10px 0px;
+    font-size: small;
+}
+.p4 a {
+    color: white;
+}
+.profile2 {
+    flex: 1;
+}
+.image_profile {
+    max-width: 70%;
+    padding: 40px;
+    align-items: center;
+}    
+
+/* -- フッター -- */
+.footer {
+    background: white;
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+    font-size: small;
+}
+.p2 {
+    margin: 0px 200px;
+    padding: 20px;
+    border-top: 0.1px black solid; /* -- ボーダーを短くしたい -- */
+    display: block;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* 以下、レスポンシブ対応させるには各端末ごとにCSSスタイルを設定する */
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+}
