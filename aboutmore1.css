@@ -1,29 +1,12 @@
 body {
     background: white;
 }
-.container-fluid {
-    background: blueviolet;
-    text-align: center;
-}
 
 /* -- ヘッダー -- */
-.row {
-    background: blue;
-    width: 100%;
-    position: fixed;
-    padding: 8px;
-    box-sizing: border-box;
-    text-align: center;
+.header {
+    background: white;
 }
 
-/* -- コンテンツ -- */
-.row {
-    background: chartreuse;
-    width: 80%;
-    text-align: center;
-    padding: 150px 0px 60px 0px;
-}
-/* -- タイトル -- */
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 240%;
@@ -33,5 +16,48 @@ h1 {
 .p1 {
     font-weight: 900;
     letter-spacing: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -- 紹介 -- */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 240%;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+.p3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* -- 内容 -- */
+.content3 {
+    width: 100%;
+    background-image: url(images/check2.PNG);
+    background-position: center;
+}
+h3 {
+    font-weight: 900;
+    border-bottom: 1px solid ;
+    padding-bottom: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul {
+    list-style: circle;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* -- フッター -- */
+.footer {
+    background: white;
+    font-size: small;
+}
+.p2 {
+    border-top: 0.1px black solid; /* -- ボーダーを短くしたい -- */
+    display: block;
+    position: relative;
     font-family: 'Times New Roman', Times, serif;
 }
